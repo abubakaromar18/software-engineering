@@ -6,7 +6,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 
 ## Month 1 — Craft: clean code, design patterns, testing
 ### Week 1 · Clean code & SOLID
-- [ ] 001 | Gilded Rose Refactor | Python | Starter | Refactoring | Take a tangled legacy inventory kata, pin it with characterization tests, then refactor to clean code step by step with a commit-by-commit log in the README
+- [x] 001 | Gilded Rose Refactor | Python | Starter | Refactoring | Take a tangled legacy inventory kata, pin it with characterization tests, then refactor to clean code step by step with a commit-by-commit log in the README → [folder](projects/001-gilded-rose-refactor/)
 - [ ] 002 | SOLID by Example | TypeScript | Starter | Design principles | Five small before/after modules, one per SOLID principle, with tests proving behavior is unchanged
 - [ ] 003 | Dependency Injection Container | C# (.NET 8) | Intermediate | Design principles | A minimal IoC container with constructor injection, lifetimes (singleton/scoped/transient) and cycle detection
 - [ ] 004 | Value Objects & Money | Java 21 | Starter | Domain modeling | Immutable Money/Currency value objects with exact arithmetic, allocation without losing cents, and equality semantics

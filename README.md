@@ -28,3 +28,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | # | Project | Stack | Level |
 |---|---|---|---|
 | 001 | [Gilded Rose Refactor](projects/001-gilded-rose-refactor/) | Python | Starter |
+| 002 | [SOLID by Example](projects/002-solid-by-example/) | TypeScript | Starter |

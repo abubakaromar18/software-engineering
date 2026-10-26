@@ -8,7 +8,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 ### Week 1 · Clean code & SOLID
 - [x] 001 | Gilded Rose Refactor | Python | Starter | Refactoring | Take a tangled legacy inventory kata, pin it with characterization tests, then refactor to clean code step by step with a commit-by-commit log in the README → [folder](projects/001-gilded-rose-refactor/)
 - [x] 002 | SOLID by Example | TypeScript | Starter | Design principles | Five small before/after modules, one per SOLID principle, with tests proving behavior is unchanged → [folder](projects/002-solid-by-example/)
-- [ ] 003 | Dependency Injection Container | C# (.NET 8) | Intermediate | Design principles | A minimal IoC container with constructor injection, lifetimes (singleton/scoped/transient) and cycle detection
+- [x] 003 | Dependency Injection Container | C# (.NET 8) | Intermediate | Design principles | A minimal IoC container with constructor injection, lifetimes (singleton/scoped/transient) and cycle detection → [folder](projects/003-dependency-injection-container/)
 - [ ] 004 | Value Objects & Money | Java 21 | Starter | Domain modeling | Immutable Money/Currency value objects with exact arithmetic, allocation without losing cents, and equality semantics
 - [ ] 005 | Linter Rule Pack | JavaScript (ESLint plugin) | Intermediate | Code quality | Custom ESLint rules (no magic numbers in business logic, max function params, banned imports) with RuleTester tests
 - [ ] 006 | Code Smell Detector | Python (ast) | Intermediate | Static analysis | Scan Python code for long methods, deep nesting, large classes and duplicate blocks; report with severity scores

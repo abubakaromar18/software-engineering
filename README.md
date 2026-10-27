@@ -30,3 +30,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 001 | [Gilded Rose Refactor](projects/001-gilded-rose-refactor/) | Python | Starter |
 | 002 | [SOLID by Example](projects/002-solid-by-example/) | TypeScript | Starter |
 | 003 | [Dependency Injection Container](projects/003-dependency-injection-container/) | C# (.NET 8) | Intermediate |
+| 004 | [Value Objects & Money](projects/004-value-objects-and-money/) | Java 21 | Starter |

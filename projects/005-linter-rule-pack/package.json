@@ -1,0 +1,36 @@
+{
+  "name": "eslint-plugin-rule-pack",
+  "version": "1.0.0",
+  "description": "Custom ESLint rules for code quality: no magic numbers in business logic, max function params, banned imports.",
+  "type": "commonjs",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "code-quality"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\"",
+    "lint": "eslint lib tests",
+    "demo": "node examples/run-demo.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.15.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}

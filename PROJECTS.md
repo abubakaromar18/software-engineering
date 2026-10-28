@@ -10,7 +10,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 002 | SOLID by Example | TypeScript | Starter | Design principles | Five small before/after modules, one per SOLID principle, with tests proving behavior is unchanged → [folder](projects/002-solid-by-example/)
 - [x] 003 | Dependency Injection Container | C# (.NET 8) | Intermediate | Design principles | A minimal IoC container with constructor injection, lifetimes (singleton/scoped/transient) and cycle detection → [folder](projects/003-dependency-injection-container/)
 - [x] 004 | Value Objects & Money | Java 21 | Starter | Domain modeling | Immutable Money/Currency value objects with exact arithmetic, allocation without losing cents, and equality semantics → [folder](projects/004-value-objects-and-money/)
-- [ ] 005 | Linter Rule Pack | JavaScript (ESLint plugin) | Intermediate | Code quality | Custom ESLint rules (no magic numbers in business logic, max function params, banned imports) with RuleTester tests
+- [x] 005 | Linter Rule Pack | JavaScript (ESLint plugin) | Intermediate | Code quality | Custom ESLint rules (no magic numbers in business logic, max function params, banned imports) with RuleTester tests → [folder](projects/005-linter-rule-pack/)
 - [ ] 006 | Code Smell Detector | Python (ast) | Intermediate | Static analysis | Scan Python code for long methods, deep nesting, large classes and duplicate blocks; report with severity scores
 - [ ] 007 | Error Handling Patterns | Rust | Intermediate | Reliability | Library showing Result-based errors, error enums, context wrapping and a CLI that surfaces errors cleanly
 ### Week 2 · Creational & structural patterns

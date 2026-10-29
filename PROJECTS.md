@@ -11,7 +11,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 003 | Dependency Injection Container | C# (.NET 8) | Intermediate | Design principles | A minimal IoC container with constructor injection, lifetimes (singleton/scoped/transient) and cycle detection → [folder](projects/003-dependency-injection-container/)
 - [x] 004 | Value Objects & Money | Java 21 | Starter | Domain modeling | Immutable Money/Currency value objects with exact arithmetic, allocation without losing cents, and equality semantics → [folder](projects/004-value-objects-and-money/)
 - [x] 005 | Linter Rule Pack | JavaScript (ESLint plugin) | Intermediate | Code quality | Custom ESLint rules (no magic numbers in business logic, max function params, banned imports) with RuleTester tests → [folder](projects/005-linter-rule-pack/)
-- [ ] 006 | Code Smell Detector | Python (ast) | Intermediate | Static analysis | Scan Python code for long methods, deep nesting, large classes and duplicate blocks; report with severity scores
+- [x] 006 | Code Smell Detector | Python (ast) | Intermediate | Static analysis | Scan Python code for long methods, deep nesting, large classes and duplicate blocks; report with severity scores → [folder](projects/006-code-smell-detector/)
 - [ ] 007 | Error Handling Patterns | Rust | Intermediate | Reliability | Library showing Result-based errors, error enums, context wrapping and a CLI that surfaces errors cleanly
 ### Week 2 · Creational & structural patterns
 - [ ] 008 | Pizza Builder & Factory | Java 21 | Starter | Design patterns | Builder, Factory Method and Abstract Factory applied to an ordering system, with tests per pattern

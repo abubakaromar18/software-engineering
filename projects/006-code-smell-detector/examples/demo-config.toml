@@ -1,0 +1,9 @@
+# Tight thresholds so the small demo codebase trips every rule.
+# Usage: smell-detector examples/legacy_shop --config examples/demo-config.toml
+[tool.smell-detector]
+max_function_lines = 15
+max_nesting_depth = 3
+max_class_methods = 8
+max_class_lines = 120
+duplicate_min_statements = 4
+duplicate_min_lines = 6

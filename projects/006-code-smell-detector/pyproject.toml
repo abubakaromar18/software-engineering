@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smell-detector"
+version = "1.0.0"
+description = "AST-based detector for long methods, deep nesting, large classes and duplicate blocks in Python code."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+smell-detector = "smell_detector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-q"
+
+# The detector reads its own configuration from this table. These values are
+# the defaults, spelled out so the table doubles as documentation.
+[tool.smell-detector]
+max_function_lines = 50
+max_nesting_depth = 4
+max_class_methods = 20
+max_class_lines = 300
+duplicate_min_statements = 4
+duplicate_min_lines = 6
+exclude = ["tests/fixtures/*", "examples/*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]

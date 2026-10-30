@@ -33,3 +33,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 004 | [Value Objects & Money](projects/004-value-objects-and-money/) | Java 21 | Starter |
 | 005 | [Linter Rule Pack](projects/005-linter-rule-pack/) | JavaScript (ESLint plugin) | Intermediate |
 | 006 | [Code Smell Detector](projects/006-code-smell-detector/) | Python (ast) | Intermediate |
+| 007 | [Error Handling Patterns](projects/007-error-handling-patterns/) | Rust | Intermediate |

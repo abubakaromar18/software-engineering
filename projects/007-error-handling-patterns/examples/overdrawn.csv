@@ -1,0 +1,5 @@
+id,date,account,amount,memo
+t001,2026-01-01,checking,100.00,opening
+t002,2026-01-05,checking,-150.00,rent
+t002,2026-01-06,checking,25.00,refund
+t003,2026-01-04,savings,0,placeholder

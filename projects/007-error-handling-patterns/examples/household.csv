@@ -1,0 +1,8 @@
+# Household books for January. Amounts are signed: deposits positive.
+id,date,account,amount,memo
+t001,2026-01-01,checking,2500.00,salary
+t002,2026-01-02,checking,-1200.00,rent
+t003,2026-01-02,savings,300.00,transfer in
+t004,2026-01-03,checking,-300.00,transfer out
+t005,2026-01-09,checking,-84.17,groceries, weekly
+t006,2026-01-15,savings,0.42,interest

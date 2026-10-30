@@ -1,0 +1,30 @@
+[package]
+name = "ledger-check"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "Error-handling patterns in Rust, shown through a small ledger validator library and CLI"
+license = "MIT"
+publish = false
+
+# Deliberately dependency-free: every pattern that crates like `thiserror`
+# and `anyhow` automate is written out by hand so it can be read and tested.
+[dependencies]
+
+[lib]
+name = "ledger_check"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ledger"
+path = "src/main.rs"
+
+[lints.rust]
+missing_docs = "warn"
+unsafe_code = "forbid"
+
+[lints.clippy]
+# Library and CLI code must surface failures as values, never as panics.
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"

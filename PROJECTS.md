@@ -14,7 +14,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 006 | Code Smell Detector | Python (ast) | Intermediate | Static analysis | Scan Python code for long methods, deep nesting, large classes and duplicate blocks; report with severity scores → [folder](projects/006-code-smell-detector/)
 - [x] 007 | Error Handling Patterns | Rust | Intermediate | Reliability | Library showing Result-based errors, error enums, context wrapping and a CLI that surfaces errors cleanly → [folder](projects/007-error-handling-patterns/)
 ### Week 2 · Creational & structural patterns
-- [ ] 008 | Pizza Builder & Factory | Java 21 | Starter | Design patterns | Builder, Factory Method and Abstract Factory applied to an ordering system, with tests per pattern
+- [x] 008 | Pizza Builder & Factory | Java 21 | Starter | Design patterns | Builder, Factory Method and Abstract Factory applied to an ordering system, with tests per pattern → [folder](projects/008-pizza-builder-and-factory/)
 - [ ] 009 | Plugin System with Adapters | Go | Intermediate | Design patterns | Adapter + Registry pattern loading payment-provider adapters behind one interface
 - [ ] 010 | Decorator Middleware Pipeline | TypeScript (Node) | Intermediate | Design patterns | Compose logging, retry, caching and timing decorators around a service; ordering semantics tested
 - [ ] 011 | Composite File Tree | C++20 | Starter | Design patterns | Composite + Visitor computing sizes, searching and printing a virtual filesystem tree

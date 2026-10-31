@@ -34,3 +34,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 005 | [Linter Rule Pack](projects/005-linter-rule-pack/) | JavaScript (ESLint plugin) | Intermediate |
 | 006 | [Code Smell Detector](projects/006-code-smell-detector/) | Python (ast) | Intermediate |
 | 007 | [Error Handling Patterns](projects/007-error-handling-patterns/) | Rust | Intermediate |
+| 008 | [Pizza Builder & Factory](projects/008-pizza-builder-and-factory/) | Java 21 | Starter |

@@ -16,7 +16,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 ### Week 2 · Creational & structural patterns
 - [x] 008 | Pizza Builder & Factory | Java 21 | Starter | Design patterns | Builder, Factory Method and Abstract Factory applied to an ordering system, with tests per pattern → [folder](projects/008-pizza-builder-and-factory/)
 - [x] 009 | Plugin System with Adapters | Go | Intermediate | Design patterns | Adapter + Registry pattern loading payment-provider adapters behind one interface → [folder](projects/009-plugin-system-with-adapters/)
-- [ ] 010 | Decorator Middleware Pipeline | TypeScript (Node) | Intermediate | Design patterns | Compose logging, retry, caching and timing decorators around a service; ordering semantics tested
+- [x] 010 | Decorator Middleware Pipeline | TypeScript (Node) | Intermediate | Design patterns | Compose logging, retry, caching and timing decorators around a service; ordering semantics tested → [folder](projects/010-decorator-middleware-pipeline/)
 - [ ] 011 | Composite File Tree | C++20 | Starter | Design patterns | Composite + Visitor computing sizes, searching and printing a virtual filesystem tree
 - [ ] 012 | Facade over a Messy API | Python | Starter | Design patterns | Wrap a simulated legacy shipping SDK behind a clean facade with typed inputs and tests
 - [ ] 013 | Flyweight Text Renderer | Kotlin | Intermediate | Design patterns | Flyweight glyph cache for a text editor model; benchmark memory with and without sharing

@@ -36,3 +36,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 007 | [Error Handling Patterns](projects/007-error-handling-patterns/) | Rust | Intermediate |
 | 008 | [Pizza Builder & Factory](projects/008-pizza-builder-and-factory/) | Java 21 | Starter |
 | 009 | [Plugin System with Adapters](projects/009-plugin-system-with-adapters/) | Go | Intermediate |
+| 010 | [Decorator Middleware Pipeline](projects/010-decorator-middleware-pipeline/) | TypeScript (Node) | Intermediate |

@@ -1,0 +1,17 @@
+# A small C++ project laid out as a virtual filesystem.
+# Format: <path> <size-in-bytes>, or <path>/ for an empty directory.
+
+README.md                  2310
+CMakeLists.txt             1180
+.gitignore                   42
+src/main.cpp                390
+src/app/cli.cpp            4870
+src/app/cli.hpp             980
+src/core/node.cpp          3620
+src/core/node.hpp          4110
+src/core/visitors.cpp      5240
+docs/architecture.md       6120
+docs/images/tree.png     184320
+tests/test_node.cpp        5400
+tests/test_cli.cpp         3010
+build/

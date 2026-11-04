@@ -38,3 +38,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 009 | [Plugin System with Adapters](projects/009-plugin-system-with-adapters/) | Go | Intermediate |
 | 010 | [Decorator Middleware Pipeline](projects/010-decorator-middleware-pipeline/) | TypeScript (Node) | Intermediate |
 | 011 | [Composite File Tree](projects/011-composite-file-tree/) | C++20 | Starter |
+| 012 | [Facade over a Messy API](projects/012-facade-over-a-messy-api/) | Python | Starter |

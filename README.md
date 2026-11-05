@@ -39,3 +39,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 010 | [Decorator Middleware Pipeline](projects/010-decorator-middleware-pipeline/) | TypeScript (Node) | Intermediate |
 | 011 | [Composite File Tree](projects/011-composite-file-tree/) | C++20 | Starter |
 | 012 | [Facade over a Messy API](projects/012-facade-over-a-messy-api/) | Python | Starter |
+| 013 | [Flyweight Text Renderer](projects/013-flyweight-text-renderer/) | Kotlin | Intermediate |

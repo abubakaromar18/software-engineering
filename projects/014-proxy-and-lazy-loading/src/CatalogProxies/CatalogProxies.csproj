@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>CatalogProxies</RootNamespace>
+    <Description>Virtual, protection, caching and dynamic proxies around a slow product repository.</Description>
+  </PropertyGroup>
+  <ItemGroup>
+    <InternalsVisibleTo Include="CatalogProxies.Tests" />
+  </ItemGroup>
+</Project>

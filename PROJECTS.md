@@ -20,7 +20,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 011 | Composite File Tree | C++20 | Starter | Design patterns | Composite + Visitor computing sizes, searching and printing a virtual filesystem tree → [folder](projects/011-composite-file-tree/)
 - [x] 012 | Facade over a Messy API | Python | Starter | Design patterns | Wrap a simulated legacy shipping SDK behind a clean facade with typed inputs and tests → [folder](projects/012-facade-over-a-messy-api/)
 - [x] 013 | Flyweight Text Renderer | Kotlin | Intermediate | Design patterns | Flyweight glyph cache for a text editor model; benchmark memory with and without sharing → [folder](projects/013-flyweight-text-renderer/)
-- [ ] 014 | Proxy & Lazy Loading | C# (.NET 8) | Intermediate | Design patterns | Virtual, protection and caching proxies around a slow repository
+- [x] 014 | Proxy & Lazy Loading | C# (.NET 8) | Intermediate | Design patterns | Virtual, protection and caching proxies around a slow repository → [folder](projects/014-proxy-and-lazy-loading/)
 ### Week 3 · Behavioral patterns
 - [ ] 015 | Undoable Text Editor | TypeScript | Intermediate | Design patterns | Command pattern with undo/redo stacks, macro commands and memento snapshots
 - [ ] 016 | Strategy Pricing Engine | Python | Starter | Design patterns | Pluggable discount/tax strategies selected by rules, fully unit tested

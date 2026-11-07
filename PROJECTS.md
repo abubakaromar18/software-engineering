@@ -22,7 +22,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 013 | Flyweight Text Renderer | Kotlin | Intermediate | Design patterns | Flyweight glyph cache for a text editor model; benchmark memory with and without sharing → [folder](projects/013-flyweight-text-renderer/)
 - [x] 014 | Proxy & Lazy Loading | C# (.NET 8) | Intermediate | Design patterns | Virtual, protection and caching proxies around a slow repository → [folder](projects/014-proxy-and-lazy-loading/)
 ### Week 3 · Behavioral patterns
-- [ ] 015 | Undoable Text Editor | TypeScript | Intermediate | Design patterns | Command pattern with undo/redo stacks, macro commands and memento snapshots
+- [x] 015 | Undoable Text Editor | TypeScript | Intermediate | Design patterns | Command pattern with undo/redo stacks, macro commands and memento snapshots → [folder](projects/015-undoable-text-editor/)
 - [ ] 016 | Strategy Pricing Engine | Python | Starter | Design patterns | Pluggable discount/tax strategies selected by rules, fully unit tested
 - [ ] 017 | Observer Stock Ticker | Go | Starter | Design patterns | Pub/sub observers with goroutines and channels, unsubscribe and backpressure handling
 - [ ] 018 | State Machine Vending | Rust | Intermediate | Design patterns | Type-state pattern vending machine where illegal transitions fail to compile

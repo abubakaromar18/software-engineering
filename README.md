@@ -41,3 +41,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 012 | [Facade over a Messy API](projects/012-facade-over-a-messy-api/) | Python | Starter |
 | 013 | [Flyweight Text Renderer](projects/013-flyweight-text-renderer/) | Kotlin | Intermediate |
 | 014 | [Proxy & Lazy Loading](projects/014-proxy-and-lazy-loading/) | C# (.NET 8) | Intermediate |
+| 015 | [Undoable Text Editor](projects/015-undoable-text-editor/) | TypeScript | Intermediate |

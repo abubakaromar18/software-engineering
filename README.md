@@ -42,3 +42,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 013 | [Flyweight Text Renderer](projects/013-flyweight-text-renderer/) | Kotlin | Intermediate |
 | 014 | [Proxy & Lazy Loading](projects/014-proxy-and-lazy-loading/) | C# (.NET 8) | Intermediate |
 | 015 | [Undoable Text Editor](projects/015-undoable-text-editor/) | TypeScript | Intermediate |
+| 016 | [Strategy Pricing Engine](projects/016-strategy-pricing-engine/) | Python | Starter |

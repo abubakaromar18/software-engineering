@@ -23,7 +23,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 014 | Proxy & Lazy Loading | C# (.NET 8) | Intermediate | Design patterns | Virtual, protection and caching proxies around a slow repository → [folder](projects/014-proxy-and-lazy-loading/)
 ### Week 3 · Behavioral patterns
 - [x] 015 | Undoable Text Editor | TypeScript | Intermediate | Design patterns | Command pattern with undo/redo stacks, macro commands and memento snapshots → [folder](projects/015-undoable-text-editor/)
-- [ ] 016 | Strategy Pricing Engine | Python | Starter | Design patterns | Pluggable discount/tax strategies selected by rules, fully unit tested
+- [x] 016 | Strategy Pricing Engine | Python | Starter | Design patterns | Pluggable discount/tax strategies selected by rules, fully unit tested → [folder](projects/016-strategy-pricing-engine/)
 - [ ] 017 | Observer Stock Ticker | Go | Starter | Design patterns | Pub/sub observers with goroutines and channels, unsubscribe and backpressure handling
 - [ ] 018 | State Machine Vending | Rust | Intermediate | Design patterns | Type-state pattern vending machine where illegal transitions fail to compile
 - [ ] 019 | Chain of Responsibility Support Desk | Java 21 | Starter | Design patterns | Ticket escalation chain with configurable handlers and audit trail

@@ -1,0 +1,50 @@
+{
+  "stacking": "sequential",
+  "discounts": [
+    {
+      "name": "Bulk pens",
+      "priority": 10,
+      "strategy": {
+        "type": "volume",
+        "categories": ["stationery"],
+        "tiers": [
+          { "min_quantity": 10, "percent": "5" },
+          { "min_quantity": 50, "percent": "15" }
+        ]
+      }
+    },
+    {
+      "name": "Book bundle 3-for-2",
+      "priority": 20,
+      "strategy": { "type": "buy_x_get_y", "categories": ["books"], "buy": 2, "free": 1 }
+    },
+    {
+      "name": "Gold members 10% off",
+      "priority": 30,
+      "when": { "tier": ["gold", "platinum"] },
+      "strategy": { "type": "percentage", "percent": "10" }
+    },
+    {
+      "name": "Black Friday coupon",
+      "priority": 40,
+      "when": {
+        "all": [
+          { "coupon": "BF2026" },
+          { "between": ["2026-11-27", "2026-11-30"] },
+          { "min_subtotal": "50.00" }
+        ]
+      },
+      "strategy": { "type": "fixed", "amount": "15.00" }
+    }
+  ],
+  "taxes": [
+    { "name": "Wholesale exempt", "priority": 1, "when": { "tier": "wholesale" }, "strategy": { "type": "none" } },
+    {
+      "name": "Texas sales tax",
+      "priority": 10,
+      "when": { "region": "US-TX" },
+      "strategy": { "type": "category_rate", "default": "8.25", "rates": { "books": "0", "groceries": "0" } }
+    },
+    { "name": "Germany VAT", "priority": 10, "when": { "region": "DE" }, "strategy": { "type": "flat", "rate": "19" } }
+  ]
+}

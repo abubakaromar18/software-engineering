@@ -1,0 +1,11 @@
+{
+  "order_date": "2026-11-27",
+  "region": "US-TX",
+  "customer_tier": "gold",
+  "coupons": ["bf2026"],
+  "items": [
+    { "sku": "PEN-BLUE", "category": "stationery", "unit_price": "1.50", "quantity": 60 },
+    { "sku": "BOOK-DDIA", "category": "books", "unit_price": "45.00", "quantity": 3 },
+    { "sku": "MUG-LOGO", "category": "homeware", "unit_price": "12.99", "quantity": 1 }
+  ]
+}

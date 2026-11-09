@@ -24,7 +24,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 ### Week 3 · Behavioral patterns
 - [x] 015 | Undoable Text Editor | TypeScript | Intermediate | Design patterns | Command pattern with undo/redo stacks, macro commands and memento snapshots → [folder](projects/015-undoable-text-editor/)
 - [x] 016 | Strategy Pricing Engine | Python | Starter | Design patterns | Pluggable discount/tax strategies selected by rules, fully unit tested → [folder](projects/016-strategy-pricing-engine/)
-- [ ] 017 | Observer Stock Ticker | Go | Starter | Design patterns | Pub/sub observers with goroutines and channels, unsubscribe and backpressure handling
+- [x] 017 | Observer Stock Ticker | Go | Starter | Design patterns | Pub/sub observers with goroutines and channels, unsubscribe and backpressure handling → [folder](projects/017-observer-stock-ticker/)
 - [ ] 018 | State Machine Vending | Rust | Intermediate | Design patterns | Type-state pattern vending machine where illegal transitions fail to compile
 - [ ] 019 | Chain of Responsibility Support Desk | Java 21 | Starter | Design patterns | Ticket escalation chain with configurable handlers and audit trail
 - [ ] 020 | Template Method Report Generator | C# (.NET 8) | Starter | Design patterns | CSV/JSON/HTML exporters sharing a template algorithm with hook methods

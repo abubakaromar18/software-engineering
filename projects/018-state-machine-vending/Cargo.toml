@@ -1,0 +1,17 @@
+[package]
+name = "vending"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.75"
+description = "Type-state vending machine: illegal transitions are compile errors"
+license = "MIT"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "vending"
+path = "src/main.rs"
+
+[dependencies]

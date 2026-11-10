@@ -44,3 +44,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 015 | [Undoable Text Editor](projects/015-undoable-text-editor/) | TypeScript | Intermediate |
 | 016 | [Strategy Pricing Engine](projects/016-strategy-pricing-engine/) | Python | Starter |
 | 017 | [Observer Stock Ticker](projects/017-observer-stock-ticker/) | Go | Starter |
+| 018 | [State Machine Vending](projects/018-state-machine-vending/) | Rust | Intermediate |

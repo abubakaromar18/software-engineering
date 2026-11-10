@@ -1,0 +1,24 @@
+# A scripted session: cargo run -- --demo < examples/demo.txt
+status
+select A1
+insert dollar
+select A1
+insert quarter
+select A1
+service 1234
+take
+insert q
+insert d
+select C1
+take
+service 0000
+service 1234
+restock B2 4
+price C1 0.40
+withdraw
+exit
+insert $
+insert $
+select C1
+cancel
+status

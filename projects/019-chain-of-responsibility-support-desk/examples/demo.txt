@@ -1,0 +1,49 @@
+Chain: spam -> faq -> tier1 -> tier2 -> engineering
+
+TICKET   OUTCOME        HANDLED BY     MESSAGE
+T-101    AUTO_RESOLVED  faq            Reset it from the sign-in page via "Forgot password?"; the link is valid for 30 minutes.
+T-102    REJECTED       spam           blocked phrase 'free money'
+T-103    AUTO_RESOLVED  faq            Invoices are under Billing > History, where each one can be downloaded as a PDF.
+T-104    ASSIGNED       tier1          assigned to Tier 1 queue
+T-105    ASSIGNED       tier1          assigned to Tier 1 queue
+T-106    ASSIGNED       tier1          assigned to Tier 1 queue
+T-107    ASSIGNED       tier2          assigned to Tier 2 queue
+T-108    ASSIGNED       tier2          assigned to Tier 2 queue
+T-109    ESCALATED      engineering    paged on-call engineer (CRITICAL)
+T-110    ESCALATED      engineering    filed engineering bug report
+
+Summary: 10 tickets, REJECTED=1, AUTO_RESOLVED=2, ASSIGNED=5, ESCALATED=2
+
+Audit trail:
+  2026-11-11T18:45:33.776055976Z  T-101    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.776992497Z  T-101    faq            HANDLED   AUTO_RESOLVED: Reset it from the sign-in page via "Forgot password?"; the link is valid for 30 minutes.
+  2026-11-11T18:45:33.780086451Z  T-102    spam           HANDLED   REJECTED: blocked phrase 'free money'
+  2026-11-11T18:45:33.780147748Z  T-103    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.780177040Z  T-103    faq            HANDLED   AUTO_RESOLVED: Invoices are under Billing > History, where each one can be downloaded as a PDF.
+  2026-11-11T18:45:33.780206191Z  T-104    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.780512204Z  T-104    faq            PASSED    severity MEDIUM above bot limit LOW
+  2026-11-11T18:45:33.781062158Z  T-104    tier1          HANDLED   ASSIGNED: assigned to Tier 1 queue
+  2026-11-11T18:45:33.781427316Z  T-105    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.781449301Z  T-105    faq            PASSED    severity MEDIUM above bot limit LOW
+  2026-11-11T18:45:33.781472375Z  T-105    tier1          HANDLED   ASSIGNED: assigned to Tier 1 queue
+  2026-11-11T18:45:33.781517116Z  T-106    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.781549588Z  T-106    faq            PASSED    no FAQ match
+  2026-11-11T18:45:33.781612950Z  T-106    tier1          HANDLED   ASSIGNED: assigned to Tier 1 queue
+  2026-11-11T18:45:33.781670059Z  T-107    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.781680970Z  T-107    faq            PASSED    severity MEDIUM above bot limit LOW
+  2026-11-11T18:45:33.786472175Z  T-107    tier1          PASSED    queue full (3/3)
+  2026-11-11T18:45:33.786505051Z  T-107    tier2          HANDLED   ASSIGNED: assigned to Tier 2 queue
+  2026-11-11T18:45:33.786575110Z  T-108    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.786587282Z  T-108    faq            PASSED    severity HIGH above bot limit LOW
+  2026-11-11T18:45:33.786943337Z  T-108    tier1          PASSED    category TECHNICAL not covered
+  2026-11-11T18:45:33.786960297Z  T-108    tier2          HANDLED   ASSIGNED: assigned to Tier 2 queue
+  2026-11-11T18:45:33.787000330Z  T-109    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.787011355Z  T-109    faq            PASSED    severity CRITICAL above bot limit LOW
+  2026-11-11T18:45:33.787019514Z  T-109    tier1          PASSED    category TECHNICAL not covered
+  2026-11-11T18:45:33.787101123Z  T-109    tier2          PASSED    severity CRITICAL above tier limit HIGH
+  2026-11-11T18:45:33.787304680Z  T-109    engineering    HANDLED   ESCALATED: paged on-call engineer (CRITICAL)
+  2026-11-11T18:45:33.787339839Z  T-110    spam           PASSED    no blocked phrases
+  2026-11-11T18:45:33.787378818Z  T-110    faq            PASSED    severity MEDIUM above bot limit LOW
+  2026-11-11T18:45:33.787763775Z  T-110    tier1          PASSED    category OTHER not covered
+  2026-11-11T18:45:33.787786941Z  T-110    tier2          PASSED    category OTHER not covered
+  2026-11-11T18:45:33.787800679Z  T-110    engineering    HANDLED   ESCALATED: filed engineering bug report

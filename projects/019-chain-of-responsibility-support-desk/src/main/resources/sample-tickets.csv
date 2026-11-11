@@ -1,0 +1,11 @@
+id,customer,category,severity,subject,body
+T-101,ana@example.com,ACCOUNT,LOW,Forgot password,"I forgot password for my account, how do I get back in?"
+T-102,bot@example.net,OTHER,LOW,You have won!,Claim your free money now
+T-103,li@example.com,BILLING,LOW,Where is my invoice?,Need the invoice for October
+T-104,sam@example.com,BILLING,MEDIUM,Charged twice,My card was charged twice this month
+T-105,kim@example.com,ACCOUNT,MEDIUM,Cannot change email,The save button does nothing
+T-106,raj@example.com,ACCOUNT,LOW,Two-factor setup,How do I add a second phone?
+T-107,eve@example.com,BILLING,MEDIUM,Refund request,Cancelled within the trial
+T-108,max@example.com,TECHNICAL,HIGH,Sync is slow,"Sync takes 10 minutes, used to take 10 seconds"
+T-109,ops@example.com,TECHNICAL,CRITICAL,API down,All requests return 503
+T-110,joe@example.com,OTHER,MEDIUM,Partnership,"Would like to talk about a ""reseller"" deal"

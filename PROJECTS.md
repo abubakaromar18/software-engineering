@@ -27,7 +27,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 017 | Observer Stock Ticker | Go | Starter | Design patterns | Pub/sub observers with goroutines and channels, unsubscribe and backpressure handling → [folder](projects/017-observer-stock-ticker/)
 - [x] 018 | State Machine Vending | Rust | Intermediate | Design patterns | Type-state pattern vending machine where illegal transitions fail to compile → [folder](projects/018-state-machine-vending/)
 - [x] 019 | Chain of Responsibility Support Desk | Java 21 | Starter | Design patterns | Ticket escalation chain with configurable handlers and audit trail → [folder](projects/019-chain-of-responsibility-support-desk/)
-- [ ] 020 | Template Method Report Generator | C# (.NET 8) | Starter | Design patterns | CSV/JSON/HTML exporters sharing a template algorithm with hook methods
+- [x] 020 | Template Method Report Generator | C# (.NET 8) | Starter | Design patterns | CSV/JSON/HTML exporters sharing a template algorithm with hook methods → [folder](projects/020-template-method-report-generator/)
 - [ ] 021 | Interpreter for Rules DSL | Python | Advanced | Design patterns | Interpreter pattern for a small business-rules language with parser, AST and evaluator
 ### Week 4 · Testing discipline
 - [ ] 022 | TDD Bowling Kata Journal | JavaScript (Vitest) | Starter | Testing | Bowling scorer built strictly red-green-refactor with git history documenting each step

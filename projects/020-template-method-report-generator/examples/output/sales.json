@@ -1,0 +1,18 @@
+{
+  "title": "Q3 Sales",
+  "columns": [
+    { "name": "Region", "type": "text" },
+    { "name": "Product", "type": "text" },
+    { "name": "Units", "type": "integer" },
+    { "name": "Revenue", "type": "decimal" },
+    { "name": "Shipped", "type": "date" }
+  ],
+  "rows": [
+    { "Region": "North", "Product": "Widget, Large", "Units": 1200, "Revenue": 5400.00, "Shipped": "2026-07-03" },
+    { "Region": "North", "Product": "Gadget", "Units": 310, "Revenue": 6196.90, "Shipped": "2026-07-11" },
+    { "Region": "South", "Product": "The \"Pro\" Kit", "Units": 45, "Revenue": 6705.00, "Shipped": "2026-08-02" },
+    { "Region": "South", "Product": "Widget <Mini>", "Units": 2875, "Revenue": 3593.75, "Shipped": null },
+    { "Region": "West", "Product": "Gadget", "Units": 980, "Revenue": 19590.20, "Shipped": "2026-09-28" }
+  ],
+  "summary": { "rowCount": 5, "totals": { "Units": 5410, "Revenue": 41485.85 } }
+}

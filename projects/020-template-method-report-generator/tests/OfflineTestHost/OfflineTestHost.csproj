@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Runs the xUnit test sources without NuGet: the same *.cs files from
+    ReportGenerator.Tests are compiled against MiniXunit.cs, a tiny shim that
+    implements the subset of the xUnit API the suite uses. Used by run-tests.sh
+    when api.nuget.org is unreachable (offline machines, locked-down CI).
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>OfflineTestHost</RootNamespace>
+    <!-- Test names use underscores; inline expected arrays read better than static fields. -->
+    <NoWarn>$(NoWarn);CA1707;CA1861</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../ReportGenerator.Tests/**/*.cs" Exclude="../ReportGenerator.Tests/obj/**;../ReportGenerator.Tests/bin/**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../src/ReportGenerator/ReportGenerator.csproj" />
+  </ItemGroup>
+</Project>

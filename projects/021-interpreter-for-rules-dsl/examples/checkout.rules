@@ -1,0 +1,63 @@
+# Checkout rules for an online store.
+# Higher priority runs first; later rules can read earlier results via result.<name>.
+
+rule "defaults" priority 1000
+when
+    true
+then
+    set discount = 0
+end
+
+rule "block embargoed destinations" priority 100
+when
+    order.country in ["XX", "YY"]
+then
+    set blocked = true
+    tag "compliance-hold"
+    stop
+end
+
+rule "gold loyalty discount" priority 50
+when
+    customer.tier == "gold" and order.subtotal >= 100
+then
+    set discount += round(order.subtotal * 10%, 2)
+    tag "loyalty"
+end
+
+rule "first order welcome" priority 50
+when
+    customer.orders == 0 and not has(customer.referral_code)
+then
+    set discount += 5
+    tag "welcome"
+end
+
+rule "bulk electronics" priority 40
+when
+    len(order.items) >= 3 and "electronics" in order.categories
+then
+    set discount += 15
+end
+
+rule "free shipping" priority 10
+when
+    order.subtotal - result.discount >= 50 or customer.tier in ["gold", "platinum"]
+then
+    set shipping = 0
+    tag "free-shipping"
+end
+
+rule "standard shipping" priority 5
+when
+    not has(result.shipping)
+then
+    set shipping = 4.99
+end
+
+rule "total" priority 1
+when
+    true
+then
+    set total = max(order.subtotal - result.discount, 0) + result.shipping
+end

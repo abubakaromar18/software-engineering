@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rules-dsl"
+version = "1.0.0"
+description = "Interpreter pattern for a small business-rules language: lexer, parser, AST, checker and evaluator."
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8", "hypothesis>=6"]
+
+[project.scripts]
+rules-dsl = "rules_dsl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "N"]
+
+[tool.ruff.lint.per-file-ignores]
+# visit_<NodeClass> method names are the visitor dispatch convention.
+"src/rules_dsl/formatter.py" = ["N802"]
+"src/rules_dsl/analysis.py" = ["N802"]

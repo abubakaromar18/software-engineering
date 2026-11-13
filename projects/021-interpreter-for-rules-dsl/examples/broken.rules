@@ -1,0 +1,16 @@
+# Deliberately broken: run `rules-dsl check examples/broken.rules` to see the checker.
+
+rule "vip" priority 10
+when
+    customer.tier == "vip" and result.score > 3
+then
+    set discount = order.total * 0.2
+    set label = "VIP" - 1
+end
+
+rule "vip"
+when
+    1 > 2
+then
+    set bonus = rounded(order.total)
+end

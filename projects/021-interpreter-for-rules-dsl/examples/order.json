@@ -1,0 +1,9 @@
+{
+  "customer": { "id": "c-1042", "tier": "gold", "orders": 7 },
+  "order": {
+    "country": "US",
+    "subtotal": 149.90,
+    "items": ["laptop-stand", "usb-c-hub", "hdmi-cable"],
+    "categories": ["electronics", "accessories"]
+  }
+}

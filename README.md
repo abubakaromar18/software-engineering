@@ -48,3 +48,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 019 | [Chain of Responsibility Support Desk](projects/019-chain-of-responsibility-support-desk/) | Java 21 | Starter |
 | 020 | [Template Method Report Generator](projects/020-template-method-report-generator/) | C# (.NET 8) | Starter |
 | 021 | [Interpreter for Rules DSL](projects/021-interpreter-for-rules-dsl/) | Python | Advanced |
+| 022 | [TDD Bowling Kata Journal](projects/022-tdd-bowling-kata-journal/) | JavaScript (Vitest) | Starter |

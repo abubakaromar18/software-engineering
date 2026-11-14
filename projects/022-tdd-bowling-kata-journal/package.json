@@ -1,0 +1,24 @@
+{
+  "name": "tdd-bowling-kata-journal",
+  "version": "1.0.0",
+  "description": "Ten-pin bowling scorer built strictly red-green-refactor, with a journal of every step",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "bowling": "bin/bowling.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node bin/bowling.js"
+  },
+  "devDependencies": {
+    "vitest": "^2.1.8"
+  }
+}

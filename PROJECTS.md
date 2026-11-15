@@ -31,7 +31,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 021 | Interpreter for Rules DSL | Python | Advanced | Design patterns | Interpreter pattern for a small business-rules language with parser, AST and evaluator → [folder](projects/021-interpreter-for-rules-dsl/)
 ### Week 4 · Testing discipline
 - [x] 022 | TDD Bowling Kata Journal | JavaScript (Vitest) | Starter | Testing | Bowling scorer built strictly red-green-refactor with git history documenting each step → [folder](projects/022-tdd-bowling-kata-journal/)
-- [ ] 023 | Property-Based Testing Lab | Python (Hypothesis) | Intermediate | Testing | Property tests that find real bugs in a sorting, encoding and date-range library
+- [x] 023 | Property-Based Testing Lab | Python (Hypothesis) | Intermediate | Testing | Property tests that find real bugs in a sorting, encoding and date-range library → [folder](projects/023-property-based-testing-lab/)
 - [ ] 024 | Mocks, Stubs & Fakes | Java 21 (JUnit 5, Mockito) | Intermediate | Testing | Same service tested with each kind of test double; README explains trade-offs
 - [ ] 025 | Mutation Testing Report | TypeScript (Stryker) | Intermediate | Testing | Library with mutation testing wired in; raise mutation score from baseline with documented changes
 - [ ] 026 | Contract Testing | Node + Python (Pact) | Advanced | Testing | Consumer-driven contracts between a JS client and a Python API, verified in CI

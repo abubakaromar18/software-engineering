@@ -50,3 +50,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 021 | [Interpreter for Rules DSL](projects/021-interpreter-for-rules-dsl/) | Python | Advanced |
 | 022 | [TDD Bowling Kata Journal](projects/022-tdd-bowling-kata-journal/) | JavaScript (Vitest) | Starter |
 | 023 | [Property-Based Testing Lab](projects/023-property-based-testing-lab/) | Python (Hypothesis) | Intermediate |
+| 024 | [Mocks, Stubs & Fakes](projects/024-mocks-stubs-and-fakes/) | Java 21 (JUnit 5, Mockito) | Intermediate |

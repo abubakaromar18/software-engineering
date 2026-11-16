@@ -1,0 +1,12 @@
+checkout 2x BOOK-042, 1x MUG-001
+  [email to ada] order ORD-1 confirmed, total $62.48
+  placed ORD-1 for $62.48
+checkout 1x MUG-001
+  rejected: OUT_OF_STOCK (MUG-001)
+checkout 3x POSTER-7
+  rejected: PAYMENT_DECLINED (amount $135.00 exceeds limit $100.00)
+checkout 1x GADGET-9
+  rejected: UNKNOWN_ITEM (GADGET-9)
+checkout (empty cart)
+  rejected: EMPTY_CART (cart has no items)
+orders for ada: 1 | gateway balance $62.48 | MUG-001 left in stock: 0

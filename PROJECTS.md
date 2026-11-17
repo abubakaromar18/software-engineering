@@ -33,7 +33,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 022 | TDD Bowling Kata Journal | JavaScript (Vitest) | Starter | Testing | Bowling scorer built strictly red-green-refactor with git history documenting each step → [folder](projects/022-tdd-bowling-kata-journal/)
 - [x] 023 | Property-Based Testing Lab | Python (Hypothesis) | Intermediate | Testing | Property tests that find real bugs in a sorting, encoding and date-range library → [folder](projects/023-property-based-testing-lab/)
 - [x] 024 | Mocks, Stubs & Fakes | Java 21 (JUnit 5, Mockito) | Intermediate | Testing | Same service tested with each kind of test double; README explains trade-offs → [folder](projects/024-mocks-stubs-and-fakes/)
-- [ ] 025 | Mutation Testing Report | TypeScript (Stryker) | Intermediate | Testing | Library with mutation testing wired in; raise mutation score from baseline with documented changes
+- [x] 025 | Mutation Testing Report | TypeScript (Stryker) | Intermediate | Testing | Library with mutation testing wired in; raise mutation score from baseline with documented changes → [folder](projects/025-mutation-testing-report/)
 - [ ] 026 | Contract Testing | Node + Python (Pact) | Advanced | Testing | Consumer-driven contracts between a JS client and a Python API, verified in CI
 - [ ] 027 | Snapshot & Golden-File Tests | Go | Starter | Testing | CLI formatter tested with golden files and an -update flag
 - [ ] 028 | Mini Test Framework | C | Intermediate | Testing | Write an xUnit-style test runner in C with assertions, fixtures and a summary report

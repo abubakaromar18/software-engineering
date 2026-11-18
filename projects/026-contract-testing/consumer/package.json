@@ -1,0 +1,20 @@
+{
+  "name": "storefront",
+  "version": "1.0.0",
+  "description": "Storefront client for the Catalog API - the consumer side of a consumer-driven contract",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:unit": "node --test test/money.test.js test/cart.test.js",
+    "test:pact": "node --test test/catalogClient.pact.test.js",
+    "demo": "node examples/demo.mjs"
+  },
+  "devDependencies": {
+    "@pact-foundation/pact": "^17.1.4"
+  },
+  "license": "MIT"
+}

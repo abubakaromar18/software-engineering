@@ -1,0 +1,82 @@
+# Example GitHub Actions pipeline for this project's contract tests.
+# It lives here (not in .github/workflows) because the repository holds many
+# independent projects; copy it to .github/workflows/ to enable it.
+#
+# Stage 1 - consumer: unit + Pact tests generate the contract, which is handed
+#           to the next job as a build artifact (or published to a broker).
+# Stage 2 - provider: replays the contract against the real FastAPI app.
+# Stage 3 - can-i-deploy: only runs when a broker is configured; asks whether
+#           this exact consumer version is verified by the deployed provider.
+name: contract-tests
+
+on:
+  push:
+    paths: ["projects/026-contract-testing/**"]
+  pull_request:
+    paths: ["projects/026-contract-testing/**"]
+
+defaults:
+  run:
+    working-directory: projects/026-contract-testing
+
+env:
+  PACT_BROKER_BASE_URL: ${{ vars.PACT_BROKER_BASE_URL }}
+  PACT_BROKER_TOKEN: ${{ secrets.PACT_BROKER_TOKEN }}
+
+jobs:
+  consumer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: projects/026-contract-testing/consumer/package-lock.json
+      - run: npm ci
+        working-directory: projects/026-contract-testing/consumer
+      - run: npm test
+        working-directory: projects/026-contract-testing/consumer
+      - name: Fail if the committed contract is stale
+        run: git diff --exit-code -- pacts/
+      - uses: actions/upload-artifact@v4
+        with:
+          name: pacts
+          path: projects/026-contract-testing/pacts/
+      - name: Publish contract
+        if: env.PACT_BROKER_BASE_URL != ''
+        run: >
+          npx --yes @pact-foundation/pact-cli@latest pact-broker publish pacts
+          --consumer-app-version ${{ github.sha }} --branch ${{ github.head_ref || github.ref_name }}
+
+  provider:
+    needs: consumer
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: pacts
+          path: projects/026-contract-testing/pacts/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: pip install -e 'provider[test]'
+      - run: ruff check provider/src provider/tests
+      - name: Verify provider
+        working-directory: projects/026-contract-testing/provider
+        env:
+          PACT_PUBLISH_RESULTS: ${{ env.PACT_BROKER_BASE_URL != '' && 'true' || 'false' }}
+          PROVIDER_VERSION: ${{ github.sha }}
+          PROVIDER_BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: pytest -q
+
+  can-i-deploy:
+    needs: provider
+    if: vars.PACT_BROKER_BASE_URL != ''
+    runs-on: ubuntu-latest
+    steps:
+      - run: >
+          npx --yes @pact-foundation/pact-cli@latest pact-broker can-i-deploy
+          --pacticipant storefront --version ${{ github.sha }} --to-environment production
+        working-directory: .

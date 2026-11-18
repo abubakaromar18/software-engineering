@@ -1,0 +1,34 @@
+# Optional: a local Pact Broker for the publish -> verify -> can-i-deploy loop.
+# The default workflow (`make contract`) needs none of this; it exchanges the
+# pact through the committed ../pacts directory.
+#
+#   make broker-up && make publish && make verify-broker && make can-i-deploy
+#   open http://localhost:9292
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: pact
+      POSTGRES_PASSWORD: pact # local development only
+      POSTGRES_DB: pact_broker
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U pact -d pact_broker"]
+      interval: 2s
+      retries: 20
+
+  pact-broker:
+    # Pin an exact version for anything beyond local experiments.
+    image: pactfoundation/pact-broker:latest
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "9292:9292"
+    environment:
+      PACT_BROKER_DATABASE_URL: postgres://pact:pact@postgres/pact_broker
+      PACT_BROKER_ALLOW_PUBLIC_READ: "true"
+      PACT_BROKER_LOG_LEVEL: WARN
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://localhost:9292/diagnostic/status/heartbeat"]
+      interval: 3s
+      retries: 20

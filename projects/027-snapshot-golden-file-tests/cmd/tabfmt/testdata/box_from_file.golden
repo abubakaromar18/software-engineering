@@ -1,0 +1,11 @@
+$ tabfmt -format box -delim \t testdata/services.tsv
+exit: 0
+--- stdout ---
+┌────────────┬───────────┬────────────┐
+│ region     │ instances │ owner      │
+├────────────┼───────────┼────────────┤
+│ us-east-1  │        12 │ platform   │
+│ eu-west-2  │         4 │ payments   │
+│ ap-south-1 │           │ unassigned │
+└────────────┴───────────┴────────────┘
+--- stderr ---

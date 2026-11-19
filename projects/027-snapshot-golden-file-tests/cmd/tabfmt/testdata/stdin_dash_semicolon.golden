@@ -1,0 +1,8 @@
+$ tabfmt -delim ; -
+exit: 0
+--- stdout ---
+k       v
+-----  --
+alpha   1
+beta   22
+--- stderr ---

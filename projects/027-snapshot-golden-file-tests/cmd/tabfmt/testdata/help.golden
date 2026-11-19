@@ -1,0 +1,11 @@
+$ tabfmt -h
+exit: 0
+--- stdout ---
+--- stderr ---
+usage: tabfmt [flags] [FILE]
+  -delim string
+    	field delimiter: a single character, or "\t" for tab (default ",")
+  -format string
+    	output format: plain, markdown or box (default "plain")
+  -max-width int
+    	truncate cells longer than N characters (0 = no limit)

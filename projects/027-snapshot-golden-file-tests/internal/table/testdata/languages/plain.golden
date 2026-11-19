@@ -1,0 +1,7 @@
+language    first_release  typing   creator
+----------  -------------  -------  -------------------------
+Go                   2009  static   Griesemer, Pike, Thompson
+Rust                 2015  static   Graydon Hoare
+Python               1991  dynamic  Guido van Rossum
+JavaScript           1995  dynamic  Brendan Eich
+C                    1972  static   Dennis Ritchie

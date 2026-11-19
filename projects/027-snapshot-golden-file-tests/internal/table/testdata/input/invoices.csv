@@ -1,0 +1,5 @@
+id,customer,amount,paid
+INV-001,Acme Corp,"1,250.00",yes
+INV-002,Globex,89.5,no
+INV-003,Initech | Subsidiary,-42,yes
+INV-004,Umbrella,,no

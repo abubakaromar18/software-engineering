@@ -1,0 +1,9 @@
+$ tabfmt -format markdown
+exit: 0
+--- stdout ---
+| service | p99_ms | status   |
+| ------- | -----: | -------- |
+| api     |     42 | ok       |
+| billing |   1300 | degraded |
+| search  |   87.5 | ok       |
+--- stderr ---

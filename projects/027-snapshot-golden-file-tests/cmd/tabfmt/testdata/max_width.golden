@@ -1,0 +1,9 @@
+$ tabfmt -max-width 5
+exit: 0
+--- stdout ---
+serv…  p99_…  stat…
+-----  -----  -----
+api       42  ok
+bill…   1300  degr…
+sear…   87.5  ok
+--- stderr ---

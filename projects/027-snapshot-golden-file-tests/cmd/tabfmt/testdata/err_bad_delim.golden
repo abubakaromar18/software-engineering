@@ -1,0 +1,5 @@
+$ tabfmt -delim ::
+exit: 2
+--- stdout ---
+--- stderr ---
+tabfmt: invalid delimiter "::": want one character other than quote or newline

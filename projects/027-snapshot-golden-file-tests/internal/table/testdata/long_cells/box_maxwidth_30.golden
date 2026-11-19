@@ -1,0 +1,6 @@
+┌─────────┬────────────────────────────────┐
+│ key     │ description                    │
+├─────────┼────────────────────────────────┤
+│ retry   │ Number of times a failed requ… │
+│ timeout │ Per-request deadline in secon… │
+└─────────┴────────────────────────────────┘

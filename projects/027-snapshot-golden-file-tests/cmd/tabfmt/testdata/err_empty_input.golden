@@ -1,0 +1,5 @@
+$ tabfmt
+exit: 1
+--- stdout ---
+--- stderr ---
+tabfmt: input is empty: expected a header row

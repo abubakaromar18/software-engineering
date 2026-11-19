@@ -1,0 +1,5 @@
+$ tabfmt -format yaml
+exit: 2
+--- stdout ---
+--- stderr ---
+tabfmt: unknown format "yaml" (want one of plain, markdown, box)

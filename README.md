@@ -53,3 +53,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 024 | [Mocks, Stubs & Fakes](projects/024-mocks-stubs-and-fakes/) | Java 21 (JUnit 5, Mockito) | Intermediate |
 | 025 | [Mutation Testing Report](projects/025-mutation-testing-report/) | TypeScript (Stryker) | Intermediate |
 | 026 | [Contract Testing](projects/026-contract-testing/) | Node + Python (Pact) | Advanced |
+| 027 | [Snapshot & Golden-File Tests](projects/027-snapshot-golden-file-tests/) | Go | Starter |

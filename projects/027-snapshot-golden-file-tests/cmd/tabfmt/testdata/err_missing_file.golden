@@ -1,0 +1,5 @@
+$ tabfmt testdata/missing.csv
+exit: 1
+--- stdout ---
+--- stderr ---
+tabfmt: open testdata/missing.csv: no such file or directory

@@ -1,0 +1,4 @@
+| key     | description                                                                           |
+| ------- | ------------------------------------------------------------------------------------- |
+| retry   | Number of times a failed request is retried with exponential backoff before giving up |
+| timeout | Per-request deadline in seconds                                                       |

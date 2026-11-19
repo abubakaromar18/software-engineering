@@ -1,0 +1,5 @@
+$ tabfmt
+exit: 1
+--- stdout ---
+--- stderr ---
+tabfmt: parse input: record on line 2: wrong number of fields

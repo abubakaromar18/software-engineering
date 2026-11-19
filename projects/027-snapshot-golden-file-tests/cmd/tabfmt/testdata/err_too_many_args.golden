@@ -1,0 +1,5 @@
+$ tabfmt a.csv b.csv
+exit: 2
+--- stdout ---
+--- stderr ---
+tabfmt: expected at most one FILE, got 2

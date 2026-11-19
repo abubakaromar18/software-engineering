@@ -1,0 +1,5 @@
+$ tabfmt -max-width 1
+exit: 2
+--- stdout ---
+--- stderr ---
+tabfmt: max width 1 leaves no room for the ellipsis; use 0 or >= 2

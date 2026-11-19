@@ -35,7 +35,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 024 | Mocks, Stubs & Fakes | Java 21 (JUnit 5, Mockito) | Intermediate | Testing | Same service tested with each kind of test double; README explains trade-offs → [folder](projects/024-mocks-stubs-and-fakes/)
 - [x] 025 | Mutation Testing Report | TypeScript (Stryker) | Intermediate | Testing | Library with mutation testing wired in; raise mutation score from baseline with documented changes → [folder](projects/025-mutation-testing-report/)
 - [x] 026 | Contract Testing | Node + Python (Pact) | Advanced | Testing | Consumer-driven contracts between a JS client and a Python API, verified in CI → [folder](projects/026-contract-testing/)
-- [ ] 027 | Snapshot & Golden-File Tests | Go | Starter | Testing | CLI formatter tested with golden files and an -update flag
+- [x] 027 | Snapshot & Golden-File Tests | Go | Starter | Testing | CLI formatter tested with golden files and an -update flag → [folder](projects/027-snapshot-golden-file-tests/)
 - [ ] 028 | Mini Test Framework | C | Intermediate | Testing | Write an xUnit-style test runner in C with assertions, fixtures and a summary report
 
 ## Month 2 — Foundations: data structures, algorithms, APIs, data

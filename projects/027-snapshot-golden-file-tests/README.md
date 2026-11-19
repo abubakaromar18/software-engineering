@@ -13,7 +13,7 @@ regenerates them all, so an intended output change is a single command plus
 a `git diff` to review.
 
 No third-party dependencies: the golden helper (`internal/golden`) is about
-120 lines of standard library code, including its own LCS line diff.
+150 lines of standard library code, including its own LCS line diff.
 
 ```text
 $ tabfmt -format box -delim '\t' cmd/tabfmt/testdata/services.tsv

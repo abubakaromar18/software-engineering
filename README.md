@@ -54,3 +54,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 025 | [Mutation Testing Report](projects/025-mutation-testing-report/) | TypeScript (Stryker) | Intermediate |
 | 026 | [Contract Testing](projects/026-contract-testing/) | Node + Python (Pact) | Advanced |
 | 027 | [Snapshot & Golden-File Tests](projects/027-snapshot-golden-file-tests/) | Go | Starter |
+| 028 | [Mini Test Framework](projects/028-mini-test-framework/) | C | Intermediate |

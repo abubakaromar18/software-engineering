@@ -1,0 +1,17 @@
+[package]
+name = "robin-hood-map"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.73"
+description = "An open-addressing hash map using Robin Hood hashing and backward-shift deletion"
+license = "MIT"
+publish = false
+
+[dependencies]
+
+[dev-dependencies]
+criterion = { version = "0.5", default-features = false, features = ["cargo_bench_support"] }
+
+[[bench]]
+name = "vs_std"
+harness = false

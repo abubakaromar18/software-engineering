@@ -40,7 +40,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 
 ## Month 2 — Foundations: data structures, algorithms, APIs, data
 ### Week 5 · Data structures from scratch
-- [ ] 029 | Generic Hash Map | Rust | Intermediate | Data structures | Open-addressing hash map with Robin Hood hashing, resizing and benchmarks against std
+- [x] 029 | Generic Hash Map | Rust | Intermediate | Data structures | Open-addressing hash map with Robin Hood hashing, resizing and benchmarks against std → [folder](projects/029-generic-hash-map/)
 - [ ] 030 | LRU & LFU Caches | Go | Intermediate | Data structures | O(1) LRU and LFU caches with generics, concurrency-safe variants and tests
 - [ ] 031 | Persistent Immutable List | Haskell | Intermediate | Data structures | Persistent list/vector with structural sharing, QuickCheck properties
 - [ ] 032 | Skip List | Java 21 | Intermediate | Data structures | Probabilistic skip list with range queries and iterator, compared to TreeMap

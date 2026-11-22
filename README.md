@@ -56,3 +56,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 027 | [Snapshot & Golden-File Tests](projects/027-snapshot-golden-file-tests/) | Go | Starter |
 | 028 | [Mini Test Framework](projects/028-mini-test-framework/) | C | Intermediate |
 | 029 | [Generic Hash Map](projects/029-generic-hash-map/) | Rust | Intermediate |
+| 030 | [LRU & LFU Caches](projects/030-lru-lfu-caches/) | Go | Intermediate |

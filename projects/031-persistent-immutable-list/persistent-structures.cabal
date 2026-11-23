@@ -1,0 +1,64 @@
+cabal-version:      3.0
+name:               persistent-structures
+version:            0.1.0.0
+synopsis:           Persistent list and vector with structural sharing
+description:
+  A strict-spined persistent cons list and a Clojure-style 32-way
+  bit-partitioned vector trie, verified with QuickCheck properties,
+  a model-based state machine test and structural-sharing checks.
+license:            MIT
+author:             Omar
+category:           Data Structures
+build-type:         Simple
+extra-doc-files:    README.md
+tested-with:        GHC == 9.4.7
+
+common warnings
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-uni-patterns
+               -Wincomplete-record-updates -Wredundant-constraints
+
+library
+  import:           warnings
+  hs-source-dirs:   src
+  exposed-modules:
+    Data.Persistent.List
+    Data.Persistent.Vector
+    Data.Persistent.Vector.Internal
+  build-depends:    base >= 4.14 && < 5, array >= 0.5 && < 0.6
+  default-language: Haskell2010
+
+executable persistent-demo
+  import:           warnings
+  hs-source-dirs:   app
+  main-is:          Main.hs
+  build-depends:    base, persistent-structures
+  default-language: Haskell2010
+
+test-suite spec
+  import:           warnings
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   test
+  main-is:          Spec.hs
+  other-modules:
+    ListSpec
+    VectorSpec
+    SharingSpec
+    Gen
+  build-depends:
+      base
+    , persistent-structures
+    , array
+    , hspec      >= 2.7 && < 2.12
+    , QuickCheck >= 2.14 && < 2.16
+  -- Arbitrary instances for library types live in the tests by design.
+  ghc-options:      -threaded -rtsopts -Wno-orphans
+  default-language: Haskell2010
+
+benchmark bench
+  import:           warnings
+  type:             exitcode-stdio-1.0
+  hs-source-dirs:   bench
+  main-is:          Bench.hs
+  build-depends:    base, persistent-structures, containers
+  ghc-options:      -O2 -fno-full-laziness
+  default-language: Haskell2010

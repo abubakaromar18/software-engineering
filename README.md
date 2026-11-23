@@ -57,3 +57,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 028 | [Mini Test Framework](projects/028-mini-test-framework/) | C | Intermediate |
 | 029 | [Generic Hash Map](projects/029-generic-hash-map/) | Rust | Intermediate |
 | 030 | [LRU & LFU Caches](projects/030-lru-lfu-caches/) | Go | Intermediate |
+| 031 | [Persistent Immutable List](projects/031-persistent-immutable-list/) | Haskell | Intermediate |

@@ -1,0 +1,35 @@
+# word<TAB>frequency — a tiny sample corpus of programming terms.
+# Lines starting with '#' and blank lines are ignored.
+typescript	950
+type	900
+types	620
+typeof	410
+typed	300
+trie	700
+tree	880
+treemap	120
+trees	260
+trait	330
+transaction	540
+transform	480
+transpile	210
+test	990
+testing	760
+tests	700
+template	450
+tensor	180
+terminal	520
+token	610
+tokenizer	240
+tuple	390
+heap	560
+hash	840
+hashmap	500
+haskell	230
+http	930
+https	800
+handler	470
+header	440
+query	780
+queue	650
+quicksort	350

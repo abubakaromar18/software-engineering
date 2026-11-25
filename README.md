@@ -59,3 +59,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 030 | [LRU & LFU Caches](projects/030-lru-lfu-caches/) | Go | Intermediate |
 | 031 | [Persistent Immutable List](projects/031-persistent-immutable-list/) | Haskell | Intermediate |
 | 032 | [Skip List](projects/032-skip-list/) | Java 21 | Intermediate |
+| 033 | [Trie Autocomplete Service](projects/033-trie-autocomplete-service/) | TypeScript | Starter |

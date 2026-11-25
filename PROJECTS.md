@@ -44,7 +44,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 030 | LRU & LFU Caches | Go | Intermediate | Data structures | O(1) LRU and LFU caches with generics, concurrency-safe variants and tests → [folder](projects/030-lru-lfu-caches/)
 - [x] 031 | Persistent Immutable List | Haskell | Intermediate | Data structures | Persistent list/vector with structural sharing, QuickCheck properties → [folder](projects/031-persistent-immutable-list/)
 - [x] 032 | Skip List | Java 21 | Intermediate | Data structures | Probabilistic skip list with range queries and iterator, compared to TreeMap → [folder](projects/032-skip-list/)
-- [ ] 033 | Trie Autocomplete Service | TypeScript | Starter | Data structures | Trie with prefix search, frequency ranking and a tiny HTTP endpoint
+- [x] 033 | Trie Autocomplete Service | TypeScript | Starter | Data structures | Trie with prefix search, frequency ranking and a tiny HTTP endpoint → [folder](projects/033-trie-autocomplete-service/)
 - [ ] 034 | Binary Heap & Priority Queue | C++20 | Starter | Data structures | Template heap with decrease-key and heapsort, used in a task scheduler demo
 - [ ] 035 | Bloom Filter & Count-Min Sketch | Python | Intermediate | Data structures | Probabilistic structures with tunable error rates and empirical accuracy charts
 ### Week 6 · Algorithms in practice

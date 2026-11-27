@@ -61,3 +61,4 @@ The full list of 183 projects is in [PROJECTS.md](PROJECTS.md).
 | 032 | [Skip List](projects/032-skip-list/) | Java 21 | Intermediate |
 | 033 | [Trie Autocomplete Service](projects/033-trie-autocomplete-service/) | TypeScript | Starter |
 | 034 | [Binary Heap & Priority Queue](projects/034-binary-heap-priority-queue/) | C++20 | Starter |
+| 035 | [Bloom Filter & Count-Min Sketch](projects/035-bloom-filter-count-min-sketch/) | Python | Intermediate |

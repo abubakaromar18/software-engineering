@@ -46,7 +46,7 @@ Format: `NNN | Title | Language/stack | Level | Area | Description`
 - [x] 032 | Skip List | Java 21 | Intermediate | Data structures | Probabilistic skip list with range queries and iterator, compared to TreeMap → [folder](projects/032-skip-list/)
 - [x] 033 | Trie Autocomplete Service | TypeScript | Starter | Data structures | Trie with prefix search, frequency ranking and a tiny HTTP endpoint → [folder](projects/033-trie-autocomplete-service/)
 - [x] 034 | Binary Heap & Priority Queue | C++20 | Starter | Data structures | Template heap with decrease-key and heapsort, used in a task scheduler demo → [folder](projects/034-binary-heap-priority-queue/)
-- [ ] 035 | Bloom Filter & Count-Min Sketch | Python | Intermediate | Data structures | Probabilistic structures with tunable error rates and empirical accuracy charts
+- [x] 035 | Bloom Filter & Count-Min Sketch | Python | Intermediate | Data structures | Probabilistic structures with tunable error rates and empirical accuracy charts → [folder](projects/035-bloom-filter-count-min-sketch/)
 ### Week 6 · Algorithms in practice
 - [ ] 036 | Graph Route Planner | Python | Intermediate | Algorithms | Dijkstra, A* and Bellman-Ford on a city graph with path visualization in the terminal
 - [ ] 037 | Diff Tool (Myers) | Go | Advanced | Algorithms | Line diff using the Myers algorithm with unified diff output and tests against known cases
